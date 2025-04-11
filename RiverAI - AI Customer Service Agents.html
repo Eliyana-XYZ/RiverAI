@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://page.genspark.site/page/toolu_01HCf6BwGLx4k9PhYN7B7WXc/riverai_website_24_7_service.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RiverAI - AI Customer Service Agents</title>
+    <link href="./RiverAI - AI Customer Service Agents_files/tailwind.min.css" rel="stylesheet">
+    <link href="./RiverAI - AI Customer Service Agents_files/css2" rel="stylesheet">
+    <!-- n8n Chat for Floating Widget -->
+    <link href="./RiverAI - AI Customer Service Agents_files/style.css" rel="stylesheet">
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+        
+        // Create the floating chat widget
+        createChat({
+            webhookUrl: 'https://riverai21.app.n8n.cloud/webhook/24c8c7f0-c6b6-437a-8102-7ff7cd9b5e96/chat',
+            mode: 'window',
+            showWelcomeScreen: false,
+            i18n: {
+                en: {
+                    title: 'Chat with Us!',
+                    subtitle: 'We\'re here to help.',
+                    inputPlaceholder: 'Type a message...'
+                }
+            }
+        });
+    </script>
+    <style>
+        body {
+            font-family: 'Lexend', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(to right, #3182ce, #4299e1);
+        }
+        
+        .section {
+            padding: 4rem 1.5rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn-primary {
+            background-color: #3182ce;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #2c5282;
+        }
+        
+        .btn-outline {
+            border: 2px solid #3182ce;
+            color: #3182ce;
+        }
+        
+        .btn-outline:hover {
+            background-color: #3182ce;
+            color: white;
+        }
+        
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #ebf4ff;
+            color: #3182ce;
+            margin-bottom: 1rem;
+        }
+        
+        .nav-link {
+            position: relative;
+            padding: 0.5rem 1rem;
+            font-weight: 500;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #3182ce;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .pricing-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 2rem;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+        
+        .pricing-card:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+        
+        .pricing-feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+        
+        .pricing-feature svg {
+            color: #38a169;
+            margin-right: 0.5rem;
+            flex-shrink: 0;
+        }
+        
+        /* Free trial badge */
+        .free-trial-badge {
+            background-color: #38a169;
+            color: white;
+            border-radius: 20px;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        
+        /* Compatibility tags */
+        .compatibility-tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .compatible {
+            background-color: #d1fae5;
+            color: #065f46;
+        }
+        
+        .incompatible {
+            background-color: #fee2e2;
+            color: #991b1b;
+        }
+        
+        /* Demo section */
+        .demo-section {
+            background-color: #f7fafc;
+            padding: 3rem 0;
+        }
+        
+        .demo-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .demo-card h3 {
+            color: #2d3748;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .demo-chat-container {
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 1rem;
+        }
+        
+        .trial-notice {
+            background-color: #ebf4ff;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .trial-notice svg {
+            color: #3182ce;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+    </style>
+<style>
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+
+.fillout-embed-standard {
+  /* This will take up the full size of whatever div you're inserting the
+   * iframe into. That div will grow in size depending on how large theh
+   * iframe is.*/
+  width: 100%;
+  height: 100%;
+}
+
+.fillout-embed-standard .fillout-embed-iframe-container {
+  position: relative;
+  transition: opacity .25s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.fillout-embed-standard .fillout-embed-iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.fillout-embed-standard .fillout-embed-loading {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  border: 6px solid #aaa;
+  border-radius: 50%;
+  border-top: 6px solid #fff;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+
+  /* Important - e.g. Webflow applies a box sizing that messes this up */
+  box-sizing: content-box;
+
+}
+</style></head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="https://page.genspark.site/page/toolu_01HCf6BwGLx4k9PhYN7B7WXc/riverai_website_24_7_service.html#" class="text-2xl font-bold text-blue-600">RiverAI</a>
+            
+            <div class="hidden md:flex space-x-6">
+                <a href="https://page.genspark.site/page/toolu_01HCf6BwGLx4k9PhYN7B7WXc/riverai_website_24_7_service.html#features" class="nav-link">Features</a>
+                <a href="https://page.genspark.site/page/toolu_01HCf6BwGLx4k9PhYN7B7WXc/riverai_website_24_7_service.html#demos" class="nav-link">Demos</a>
+                <a href="https://page.genspark.site/page/toolu_01HCf6BwGLx4k9PhYN7B7WXc/riverai_website_24_7_service.html#pricing" class="nav-link">Pricing</a>
+                <a href="https://page.genspark.site/page/toolu_01HCf6BwGLx4k9PhYN7B7WXc/riverai_website_24_7_service.html#calendar" class="nav-link">Calendar</a>
+            </div>
+            
+            <button class="btn btn-primary">Get Started</button>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">The Service Agents Your Company Needs Today!</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Our AI agents handle your customer service 24/7, booking appointments, answering questions, and collecting information - all without you lifting a finger.</p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+                <a href="https://page.genspark.site/page/toolu_01HCf6BwGLx4k9PhYN7B7WXc/riverai_website_24_7_service.html#demos" class="btn btn-primary">See Demos</a>
+                <a href="https://page.genspark.site/page/toolu_01HCf6BwGLx4k9PhYN7B7WXc/riverai_website_24_7_service.html#pricing" class="btn bg-white text-blue-600 hover:bg-gray-100">View Pricing</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section id="features" class="section bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Powerful Features</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Our AI agents come packed with features to transform your customer service experience.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="card bg-white p-6">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Appointment Scheduling</h3>
+                    <p class="text-gray-600">Our AI agents automatically handle appointment bookings, check availability, and prevent double bookings.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="card bg-white p-6">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">FAQ Handling</h3>
+                    <p class="text-gray-600">Let our AI answer common questions instantly, providing information 24/7 without human intervention.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="card bg-white p-6">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Email Confirmations</h3>
+                    <p class="text-gray-600">Automatic email confirmations sent to both you and your customers for every booking made.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="card bg-white p-6">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Customer Information</h3>
+                    <p class="text-gray-600">Collect and store important customer information directly through the chat interface.</p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="card bg-white p-6">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">24/7 Availability</h3>
+                    <p class="text-gray-600">Our AI agents work round-the-clock, providing service even when you're sleeping or busy.</p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="card bg-white p-6">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Easy Integration</h3>
+                    <p class="text-gray-600">Seamlessly integrates with your existing website with just a few lines of code.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Demo Section -->
+    <section id="demos" class="demo-section">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">See Our AI Agents in Action</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Choose between two implementation options for your website.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Contact Us Section Demo -->
+                <div class="demo-card">
+                    <h3 class="text-2xl font-semibold mb-2">Contact Us Section Demo</h3>
+                    <p class="mb-4">This option replaces your contact section with an AI chat interface. The chat stays in one place on your page.</p>
+                    
+                    <!-- Compatibility info -->
+                    <div class="mb-4">
+                        <p class="font-medium mb-2">Compatibility:</p>
+                        <span class="compatibility-tag compatible">Works with BOTH free AND paid plans</span>
+                    </div>
+                    
+                    <!-- Demo image -->
+                    <div class="demo-chat-container">
+                        <img src="./RiverAI - AI Customer Service Agents_files/d0a7ea7e8be0e9b87e645aa5741f181c" alt="Contact Us Section Chat Demo" class="w-full">
+                    </div>
+                </div>
+                
+                <!-- Floating Widget Demo -->
+                <div class="demo-card">
+                    <h3 class="text-2xl font-semibold mb-2">Floating Widget Demo</h3>
+                    <p class="mb-4">This option adds a chat button that follows users throughout your site. Try it out using the button in the corner of this page!</p>
+                    
+                    <!-- Compatibility info -->
+                    <div class="mb-4">
+                        <p class="font-medium mb-2">Compatibility:</p>
+                        <span class="compatibility-tag compatible">Works with paid plans only</span>
+                        <span class="compatibility-tag incompatible">Not compatible with free plans</span>
+                    </div>
+                    
+                    <!-- Demo pointer -->
+                    <div class="bg-blue-50 p-4 rounded-lg flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <p>Look for the chat button in the bottom-right corner of this page. Click it to see how the floating widget works!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Calendar Demo Section -->
+    <section id="calendar" class="section bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Seamless Calendar Integration</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Our AI agents handle appointment scheduling seamlessly. Try our chat demos above to book an appointment, then refresh the page to see how the calendar updates automatically with your new booking.</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <iframe class="airtable-embed" src="./RiverAI - AI Customer Service Agents_files/shreWOKebUpGIMp2r.html" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing Section -->
+    <section id="pricing" class="section bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">No setup fees. No hidden costs.</p>
+            </div>
+            
+            <div class="text-center mb-12">
+                <div class="trial-notice inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span class="font-medium">Start with a 14-Day Free Trial</span>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Contact Us Section Plan -->
+                <div class="pricing-card bg-white">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold mb-2">Contact Us Section</h3>
+                        <p class="text-gray-600 mb-4">Replace your contact section with an AI chat</p>
+                        <div class="text-3xl font-bold">$120<span class="text-lg font-normal text-gray-600">/month CAD</span></div>
+                        <p class="text-sm text-gray-500">Plus tax</p>
+                        <div class="free-trial-badge mt-2">Includes 14-day free trial</div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="pricing-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Replaces your "Contact us" Section</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Handles booking for you</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Checks availability, no overlapping bookings</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Sends confirmation emails to you and your customer</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Handles FAQs for you</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Collects customer info for you</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Works 24/7, even when you're asleep</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <p class="font-medium mb-2">Compatibility:</p>
+                        <span class="compatibility-tag compatible">Compatible with BOTH free AND paid website builder plans</span>
+                    </div>
+                    
+                    <button class="w-full btn btn-primary" onclick="showContactUsForm()">Start Free Trial</button>
+                </div>
+                
+                <!-- Floating Widget Plan -->
+                <div class="pricing-card bg-white">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold mb-2">Floating Widget</h3>
+                        <p class="text-gray-600 mb-4">Add a chat button that follows users on your site</p>
+                        <div class="text-3xl font-bold">$150<span class="text-lg font-normal text-gray-600">/month CAD</span></div>
+                        <p class="text-sm text-gray-500">Plus tax</p>
+                        <div class="free-trial-badge mt-2">Includes 14-day free trial</div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="pricing-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Sits in the corner of your website and looks very professional</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Handles booking for you</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Checks availability, no overlapping bookings</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Sends confirmation emails to you and your customer</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Handles FAQs for you</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Collects customer info for you</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Works 24/7, even when you're asleep</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <p class="font-medium mb-2">Compatibility:</p>
+                        <span class="compatibility-tag compatible">Compatible with paid website builder plans only</span>
+                    </div>
+                    
+                    <button class="w-full btn btn-primary" onclick="showFloatingWidgetForm()">Start Free Trial</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-4">RiverAI</h3>
+                    <p class="text-gray-400 max-w-xs">AI-powered customer service agents for your website that work 24/7.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Products</h4>
+                        <ul class="space-y-2">
+                            <li><a href="https://page.genspark.site/page/toolu_01HCf6BwGLx4k9PhYN7B7WXc/riverai_website_24_7_service.html#demos" class="text-gray-400 hover:text-white transition-colors">Contact Us Section</a></li>
+                            <li><a href="https://page.genspark.site/page/toolu_01HCf6BwGLx4k9PhYN7B7WXc/riverai_website_24_7_service.html#demos" class="text-gray-400 hover:text-white transition-colors">Floating Widget</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                        <ul class="space-y-2">
+                            <li><a href="https://page.genspark.site/page/toolu_01HCf6BwGLx4k9PhYN7B7WXc/riverai_website_24_7_service.html#calendar" class="text-gray-400 hover:text-white transition-colors">Calendar Demo</a></li>
+                            <li><a href="https://page.genspark.site/page/toolu_01HCf6BwGLx4k9PhYN7B7WXc/riverai_website_24_7_service.html#pricing" class="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                        <ul class="space-y-2">
+                            <li><a href="https://page.genspark.site/page/toolu_01HCf6BwGLx4k9PhYN7B7WXc/riverai_website_24_7_service.html#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                            <li><a href="https://page.genspark.site/page/toolu_01HCf6BwGLx4k9PhYN7B7WXc/riverai_website_24_7_service.html#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400">© 2023 RiverAI. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="https://page.genspark.site/page/toolu_01HCf6BwGLx4k9PhYN7B7WXc/riverai_website_24_7_service.html#" class="text-gray-400 hover:text-white transition-colors">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <a href="https://page.genspark.site/page/toolu_01HCf6BwGLx4k9PhYN7B7WXc/riverai_website_24_7_service.html#" class="text-gray-400 hover:text-white transition-colors">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                        </svg>
+                    </a>
+                    <a href="https://page.genspark.site/page/toolu_01HCf6BwGLx4k9PhYN7B7WXc/riverai_website_24_7_service.html#" class="text-gray-400 hover:text-white transition-colors">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Form Overlays (Hidden by default) -->
+    <div id="contact-us-form-overlay" class="hidden">
+        <div style="position:fixed;top:0px;left:0px;right:0px;bottom:0px;z-index:9999;">
+            <div data-fillout-id="fxQHyPCRGZus" data-fillout-embed-type="fullscreen" style="width: 100%; height: 100%; position: relative;" data-fillout-inherit-parameters="" data-fillout-initialized="true"><div class="fillout-embed-standard" style="opacity: 1;"><div class="fillout-embed-loading" style="display: none;"></div><div class="fillout-embed-iframe-container" style="opacity: 1;"><iframe src="./RiverAI - AI Customer Service Agents_files/fxQHyPCRGZus.html" allow="microphone; camera; geolocation" title="fxQHyPCRGZus" style="border: 0px; border-radius: 0px;"></iframe></div></div></div>
+            <script src="./RiverAI - AI Customer Service Agents_files/saved_resource"></script>
+        </div>
+    </div>
+    
+    <div id="floating-widget-form-overlay" class="hidden">
+        <div style="position:fixed;top:0px;left:0px;right:0px;bottom:0px;z-index:9999;">
+            <div data-fillout-id="1LZZTj2Eymus" data-fillout-embed-type="fullscreen" style="width: 100%; height: 100%; position: relative;" data-fillout-inherit-parameters="" data-fillout-initialized="true"><div class="fillout-embed-standard" style="opacity: 1;"><div class="fillout-embed-loading" style="display: none;"></div><div class="fillout-embed-iframe-container" style="opacity: 1;"><iframe src="./RiverAI - AI Customer Service Agents_files/1LZZTj2Eymus.html" allow="microphone; camera; geolocation" title="1LZZTj2Eymus" style="border: 0px; border-radius: 0px;"></iframe></div></div></div>
+            <script src="./RiverAI - AI Customer Service Agents_files/saved_resource"></script>
+        </div>
+    </div>
+    
+    <script>
+        // Functions to show/hide form overlays
+        function showContactUsForm() {
+            document.getElementById('contact-us-form-overlay').classList.remove('hidden');
+        }
+        
+        function showFloatingWidgetForm() {
+            document.getElementById('floating-widget-form-overlay').classList.remove('hidden');
+        }
+        
+        // Close forms when clicking outside
+        window.addEventListener('message', function(e) {
+            if (e.data === 'fillout-form-closed') {
+                document.getElementById('contact-us-form-overlay').classList.add('hidden');
+                document.getElementById('floating-widget-form-overlay').classList.add('hidden');
+            }
+        });
+    </script>
+
+<div id="n8n-chat" data-v-app=""><div class="chat-window-wrapper n8n-chat"><div class="chat-window" style="display: none;"><main class="chat-layout chat-wrapper"><div class="chat-header"><div class="chat-heading"><h1>Chat with Us!</h1><!----></div><p>We're here to help.</p></div><div class="chat-body"><div class="chat-messages-list"><div class="chat-message chat-message-from-bot"><!----><div class="chat-message-markdown"><p>Hi there! 👋</p>
+</div><!----></div><div class="chat-message chat-message-from-bot"><!----><div class="chat-message-markdown"><p>My name is Nathan. How can I assist you today?</p>
+</div><!----></div><!----></div></div><div class="chat-footer"><div data-v-2a7fb1c3="" class="chat-input" style="--controls-count: 1;"><div data-v-2a7fb1c3="" class="chat-inputs"><textarea data-v-2a7fb1c3="" placeholder="Type a message..."></textarea><div data-v-2a7fb1c3="" class="chat-inputs-controls"><!----><button data-v-2a7fb1c3="" disabled="" class="chat-input-send-button"><svg data-v-2a7fb1c3="" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="m2 21l21-9L2 3v7l15 2l-15 2z"></path></svg></button></div></div><!----></div></div></main></div><div class="chat-window-toggle"><svg viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="M12 3c5.5 0 10 3.58 10 8s-4.5 8-10 8c-1.24 0-2.43-.18-3.53-.5C5.55 21 2 21 2 21c2.33-2.33 2.7-3.9 2.75-4.5C3.05 15.07 2 13.13 2 11c0-4.42 4.5-8 10-8"></path></svg></div></div></div></body></html>
